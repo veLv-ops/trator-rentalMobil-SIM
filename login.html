@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trator</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2 class="title">Trator</h2>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="form active">
+        <label for="loginUsername">Username</label>
+        <input type="text" id="loginUsername" placeholder="Enter your username">
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password">
+
+        <button type="submit" class="main-btn">Login →</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerForm" class="form">
+        <label for="regUsername">Username</label>
+        <input type="text" id="regUsername" placeholder="Create a username">
+
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" placeholder="Create a password">
+
+        <label for="regConfirm">Confirm Password</label>
+        <input type="password" id="regConfirm" placeholder="Confirm your password">
+
+        <button type="submit" class="main-btn">Register →</button>
+        </form>
+
+        <!-- Switch Buttons -->
+        <div class="switch">
+        <button id="loginSwitch" class="switch-btn active">login</button>
+        <button id="registerSwitch" class="switch-btn">register</button>
+        </div>
+    </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
