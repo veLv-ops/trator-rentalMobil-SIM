@@ -1,5 +1,4 @@
-import { login, register } from "./authService.js";
-
+// Toggle Login/Register
 const loginForm = document.getElementById('loginForm');
 const registerForm = document.getElementById('registerForm');
 const loginSwitch = document.getElementById('loginSwitch');
@@ -19,38 +18,29 @@ loginSwitch.addEventListener('click', () => {
   registerSwitch.classList.remove('active');
 });
 
-// === HANDLE LOGIN ===
-loginForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
+// Carousel Logic
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let index = 0;
 
-  const email = document.getElementById("loginEmail").value;
-  const password = document.getElementById("loginPassword").value;
+function showSlide(i) {
+  slides.forEach((slide, idx) => {
+    slide.classList.toggle('active', idx === i);
+    dots[idx].classList.toggle('active', idx === i);
+  });
+}
 
-  try {
-    const data = await login(email, password);
-    console.log("Login response:", data);
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
 
-    window.location.href = "contact.html";
-  } catch (err) {
-    alert("Login gagal: " + err.message);
-  }
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    index = i;
+    showSlide(index);
+  });
 });
 
-// === HANDLE REGISTER ===
-registerForm.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById("regUsername").value;
-  const email = document.getElementById("regEmail").value;
-  const password = document.getElementById("regPassword").value;
-  const passwordConfirmation = document.getElementById("regConfirm").value;
-
-  try {
-    const data = await register(name, email, password, passwordConfirmation);
-    console.log("Register response:", data);
-
-    window.location.href = "contact.html";
-  } catch (err) {
-    alert("Registrasi gagal: " + err.message);
-  }
-});
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
