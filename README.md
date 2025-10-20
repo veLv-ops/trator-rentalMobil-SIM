@@ -2,4 +2,9 @@
 repo untuk pemenuhan tugas perkuliahan
 
 # Anggota Kelompok
-Abib, Ashil, Ivan, Fahmi, Firman
+Abib 
+Ashil
+Ivan 
+Fahmi
+Firman
+Mas Gusti
