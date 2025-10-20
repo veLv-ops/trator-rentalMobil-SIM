@@ -2,9 +2,15 @@
 repo untuk pemenuhan tugas perkuliahan
 
 # Anggota Kelompok
-Abib 
-Ashil
-Ivan 
-Fahmi
-Firman
-Mas Gusti
+
+#Abib 
+
+#Ashil
+
+#Ivan 
+
+#Fahmi
+
+#Firman
+
+#Mas Gusti
