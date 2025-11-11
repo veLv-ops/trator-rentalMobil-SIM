@@ -1,0 +1,12 @@
+# Mengaktifkan URL rewriting
+RewriteEngine On
+
+# Menentukan base path
+RewriteBase /
+
+# Jika file atau folder fisik ada, biarkan Apache menanganinya
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Selain itu, arahkan semua request ke index.php
+RewriteRule ^ index.php [L]
