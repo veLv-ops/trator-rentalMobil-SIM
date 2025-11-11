@@ -92,7 +92,7 @@ trator/
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/username/trator-rentalMobil-SIM-KELOMPOK3.git
+   git clone https://github.com/veLv-ops/trator-rentalMobil-SIM.git
    cd trator
    ```
 
