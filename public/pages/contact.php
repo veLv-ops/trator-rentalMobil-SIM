@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     if (!empty($message)) {
         // Save to database
-        $stmt = $db->prepare("INSERT INTO feedback (name, email, message) VALUES (?, ?, ?)");
-        $stmt->execute([$name, '', $message]);
+        $stmt = $db->prepare("INSERT INTO feedback (name, message) VALUES (?, ?)");
+        $stmt->execute([$name, $message]);
         
         // Create WhatsApp message
         $whatsapp_message = "Halo trator, saya *{$name}*%0A%0A{$message}";
