@@ -1,0 +1,289 @@
+/* ---------------------------------------------------------------------
+   Trator - Premium Car Rental
+   Theme: Electric Automotive
+   --------------------------------------------------------------------- */
+
+:root {
+    /* Colors */
+    --primary: #D4F800;
+    --primary-hover: #b4d200;
+    --dark: #0F0F0F;
+    --dark-surface: #1A1A1A;
+    --dark-surface-2: #252525;
+    --text-main: #FFFFFF;
+    --text-muted: #ffffff;
+    --border-color: #333333;
+
+    /* Fonts */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --section-padding: 100px;
+    --container-max: 1320px;
+}
+
+/* ---------------------------------------------------------------------
+   Reset & Base
+   --------------------------------------------------------------------- */
+body {
+    background-color: var(--dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------
+   Utilities
+   --------------------------------------------------------------------- */
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.bg-dark-surface {
+    background-color: var(--dark-surface);
+}
+
+.section-padding {
+    padding: var(--section-padding) 0;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--primary);
+    color: var(--dark);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary-custom:hover {
+    background-color: transparent;
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(212, 248, 0, 0.1);
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-outline-custom:hover {
+    border-color: var(--text-main);
+    background-color: var(--text-main);
+    color: var(--dark);
+}
+
+/* ---------------------------------------------------------------------
+   Navbar
+   --------------------------------------------------------------------- */
+.navbar-custom {
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--text-main) !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand span {
+    color: var(--primary);
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 16px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-main) !important;
+}
+
+/* ---------------------------------------------------------------------
+   Hero Section
+   --------------------------------------------------------------------- */
+.hero-section {
+    position: relative;
+    padding: 160px 0 100px;
+    overflow: hidden;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg-glow {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: var(--primary);
+    filter: blur(150px);
+    opacity: 0.15;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.hero-title span {
+    color: var(--primary);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 20px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(10px);
+}
+
+.image-banner {
+    width: 500px;
+    height: auto;
+}
+
+/* ---------------------------------------------------------------------
+   Cards (General)
+   --------------------------------------------------------------------- */
+.feature-card {
+    background: var(--dark-surface);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.feature-text {
+    color: var(--text-main);
+    margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------
+   Footer
+   --------------------------------------------------------------------- */
+.footer {
+    background-color: var(--dark-surface);
+    padding: 80px 0 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+    padding-left: 5px;
+}
+
+.copyright {
+    padding: 30px 0;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
