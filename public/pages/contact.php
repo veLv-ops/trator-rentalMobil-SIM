@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="card-body p-5">
                         <?php if (isset($success)): ?>
                             <div class="alert alert-success alert-dismissible fade show bg-success text-white border-0" role="alert">
-                                <i class="ph ph-check-circle me-2"></i><?php echo $success; ?>
+                                <i class="ph ph-check-circle me-2" style="color: #777;"></i><?php echo $success; ?>
                                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
                             </div>
                         <?php endif; ?>
@@ -67,17 +67,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <form method="POST" class="needs-validation" novalidate>
                                 <div class="mb-4">
-                                    <label class="form-label text-main ">Your Name</label>
+                                    <label class="form-label text-main " style="color: var(--text-main);">Your Name</label>
                                     <div class="input-group">
-                                        <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-user"></i></span>
+                                        <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-user" style="color: var(--text-main);"></i></span>
                                         <input type="text" class="form-control bg-dark border-secondary text-white" value="<?php echo htmlspecialchars($_SESSION['username']); ?>" readonly>
                                     </div>
                                 </div>
                                 
                                 <div class="mb-4">
-                                    <label class="form-label text-main ">Message</label>
+                                    <label class="form-label text-main " style="color: var(--text-main);">Message</label>
                                     <div class="input-group">
-                                        <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-chat-text"></i></span>
+                                        <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-chat-text" style="color: var(--text-main);"></i></span>
                                         <textarea class="form-control bg-dark border-secondary text-white" placeholder="How can we help you today?" rows="6" name="message" required style="resize: none;"></textarea>
                                     </div>
                                     <div class="invalid-feedback">
