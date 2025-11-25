@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="col-lg-8">
                 <div class="text-center mb-5" data-aos="fade-up">
                     <h1 class="display-4 fw-bold mb-3">Get in <span class="text-primary-custom">Touch</span></h1>
-                    <p class="text-main  fs-5">Have questions or need assistance? We're here to help.</p>
+                    <p class="text-main  fs-5">Ada pertanyaan atau butuh bantuan? kami disini untuk membantu.</p>
                 </div>
                 
                 <div class="card bg-dark-surface border-0 shadow-lg" data-aos="fade-up" data-aos-delay="100">
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <?php if (isset($_SESSION['user_id'])): ?>
                             <form method="POST" class="needs-validation" novalidate>
                                 <div class="mb-4">
-                                    <label class="form-label text-main " style="color: var(--text-main);">Your Name</label>
+                                    <label class="form-label text-main " style="color: var(--text-main);">Nama Anda</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-user" style="color: var(--text-main);"></i></span>
                                         <input type="text" class="form-control bg-dark border-secondary text-white" value="<?php echo htmlspecialchars($_SESSION['username']); ?>" readonly>
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 
                                 <div class="mb-4">
-                                    <label class="form-label text-main " style="color: var(--text-main);">Message</label>
+                                    <label class="form-label text-main " style="color: var(--text-main);">Pesan Anda</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-dark border-secondary text-main "><i class="ph ph-chat-text" style="color: var(--text-main);"></i></span>
                                         <textarea class="form-control bg-dark border-secondary text-white" placeholder="How can we help you today?" rows="6" name="message" required style="resize: none;"></textarea>
@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 
                                 <div class="d-grid">
                                     <button type="submit" class="btn btn-primary-custom justify-content-center">
-                                        Send via WhatsApp <i class="ph ph-whatsapp-logo fs-5"></i>
+                                        Kirim via WhatsApp <i class="ph ph-whatsapp-logo fs-5"></i>
                                     </button>
                                 </div>
                             </form>

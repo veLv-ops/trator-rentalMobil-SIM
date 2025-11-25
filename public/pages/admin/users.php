@@ -251,7 +251,6 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <!-- Edit User Modal -->
     <div class="modal fade" id="editUserModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -265,12 +264,12 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <input type="hidden" name="id" id="edit_id">
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Username</label>
+                            <label class="form-label text-main">Username</label>
                             <input type="text" class="form-control" name="username" id="edit_username" required>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Role</label>
+                            <label class="form-label text-main">Role</label>
                             <select class="form-select" name="role" id="edit_role" required>
                                 <option value="user">User</option>
                                 <option value="admin">Admin</option>

@@ -43,8 +43,8 @@ $feedback_chunks = array_chunk($feedbacks, 2);
 <section class="section-padding">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
-            <h1 class="display-4 fw-bold mb-3">Client <span class="text-primary-custom">Stories</span></h1>
-            <p class="text-main fs-5">Hear what our satisfied customers have to say</p>
+            <h1 class="display-4 fw-bold mb-3">Cerita <span class="text-primary-custom">Client Kami</span></h1>
+            <p class="text-main fs-5">Dengarkan cerita yang telah kami hadirkan</p>
         </div>
         
         <div class="row mb-5 justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -58,7 +58,7 @@ $feedback_chunks = array_chunk($feedbacks, 2);
                 
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <button class="btn btn-primary-custom" data-bs-toggle="modal" data-bs-target="#addFeedbackModal">
-                        <i class="ph ph-plus me-2"></i> Share Your Experience
+                        <i class="ph ph-plus me-2"></i> Bagikan Pengalamanmu
                     </button>
                 <?php else: ?>
                     <a href="/trator/auth" class="btn btn-outline-custom">

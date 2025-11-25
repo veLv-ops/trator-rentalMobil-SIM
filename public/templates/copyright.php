@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <p class="mb-0">
+                <p class="mb-0" style="color: #777;">
                     &copy; <?php echo date('Y'); ?> Trator. All Rights Reserved. 
                     <span class="text-main ms-2">Premium Car Rental Services.</span>
                 </p>

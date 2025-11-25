@@ -334,29 +334,29 @@ $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <input type="hidden" name="action" value="add">
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Brand</label>
+                            <label class="form-label text-main" >Brand</label>
                             <input type="text" class="form-control" name="brand" required>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Model</label>
+                            <label class="form-label text-main">Model</label>
                             <input type="text" class="form-control" name="model" required>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Year</label>
+                            <label class="form-label text-main">Year</label>
                             <input type="number" class="form-control" name="year" min="1990" max="2030" required>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Price per Day (Rp)</label>
+                            <label class="form-label text-main">Price per Day (Rp)</label>
                             <input type="number" class="form-control" name="price_per_day" min="0" step="1000" required>
                         </div>
                         
                         <div class="mb-3">
-                            <label class="form-label text-muted">Vehicle Photo</label>
+                            <label class="form-label text-main">Vehicle Photo</label>
                             <input type="file" class="form-control" name="image" accept="image/*">
-                            <small class="text-muted">Optional. Supported: JPG, PNG, GIF</small>
+                            <small class="text-main">Optional. Supported: JPG, PNG, GIF</small>
                         </div>
                     </div>
                     <div class="modal-footer">
